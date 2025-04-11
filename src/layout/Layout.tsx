@@ -1,8 +1,21 @@
 import { Outlet } from "react-router";
+import CustomCursor from "../components/CustomCursor";
+import { useEffect } from "react";
 
 export default function Layout() {
+  useEffect(() => {
+    // Agregar la clase para activar el cursor personalizado
+    document.body.classList.add("custom-cursor-active");
+
+    // Limpiar al desmontar
+    return () => {
+      document.body.classList.remove("custom-cursor-active");
+    };
+  }, []);
+
   return (
     <>
+      <CustomCursor />
       <div className="grid relative grid-cols-3">
         <div className="mt-10 ml-10  col-span-1">
           <div className=" fixed  text-landing-white col-span-1 grid grid-cols-1 grid-rows-10 h-96">

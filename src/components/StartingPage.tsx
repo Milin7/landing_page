@@ -12,15 +12,6 @@ function StartingPage() {
           {jobs.map((jobList) => (
             <ExperienceCard jobList={jobList} key={jobList.id} />
           ))}
-          {jobs.map((jobList) => (
-            <ExperienceCard jobList={jobList} key={jobList.id} />
-          ))}
-          {jobs.map((jobList) => (
-            <ExperienceCard jobList={jobList} key={jobList.id} />
-          ))}
-          {jobs.map((jobList) => (
-            <ExperienceCard jobList={jobList} key={jobList.id} />
-          ))}
         </div>
       </div>
     </>

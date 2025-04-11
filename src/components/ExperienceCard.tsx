@@ -7,7 +7,7 @@ type JobListProps = {
 export default function ExperienceCard({ jobList }: JobListProps) {
   return (
     <>
-      <div className="relative my-20 pl-5">
+      <div className=" cursor-default relative my-20 pl-5">
         <svg
           width="8"
           height="8"
@@ -17,9 +17,9 @@ export default function ExperienceCard({ jobList }: JobListProps) {
         >
           <circle cx="2" cy="2" r="2" fill="currentColor" />
         </svg>
-        <h1 className="  w-full">Date</h1>
-        <p>Company name</p>
-        <p>Role</p>
+        <h1 className="  w-full">{jobList.jobDetails.date}</h1>
+        <p>{jobList.jobDetails.name}</p>
+        <p>{jobList.jobDetails.role}</p>
         <p>Description</p>
       </div>
     </>

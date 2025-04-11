@@ -19,4 +19,13 @@ export const jobs: JobItem[] = [
     },
     id: 2,
   },
+  {
+    jobDetails: {
+      name: "Oracle ",
+      date: "March 2025 - December 2025",
+      role: "Front-end developer mid-level",
+      description: "Build api, blaskfj alksjflajk",
+    },
+    id: 2,
+  },
 ];
