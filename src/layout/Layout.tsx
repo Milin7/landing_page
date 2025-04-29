@@ -1,5 +1,5 @@
 import { Outlet } from "react-router";
-import CustomCursor from "../components/CustomCursor";
+// import CustomCursor from "../components/CustomCursor";
 import { useEffect } from "react";
 
 export default function Layout() {
@@ -15,7 +15,7 @@ export default function Layout() {
 
   return (
     <>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <div className="grid relative grid-cols-3">
         <div className="mt-10 ml-10  col-span-1">
           <div className=" fixed  text-landing-white col-span-1 grid grid-cols-1 grid-rows-10 h-96">

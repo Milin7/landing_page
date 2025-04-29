@@ -17,8 +17,8 @@ export default function ExperienceCard({ jobList }: JobListProps) {
         >
           <circle cx="2" cy="2" r="2" fill="currentColor" />
         </svg>
-        <h1 className="  w-full">{jobList.jobDetails.date}</h1>
-        <p>{jobList.jobDetails.name}</p>
+        <h3>{jobList.jobDetails.name}</h3>
+        <p className="  w-full">{jobList.jobDetails.date}</p>
         <p>{jobList.jobDetails.role}</p>
         <p>Description</p>
       </div>
